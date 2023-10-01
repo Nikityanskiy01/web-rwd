@@ -1,0 +1,64 @@
+footer {
+  background: $dark-background-color;
+  color: $light-text-color;
+}
+.footer__social {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 3.94rem;
+}
+.footer__brand {
+  color: $light-text-color;
+  margin-top: 3.31rem;
+}
+.footer__logotypes {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.footer__content {
+  margin-top: 6.88rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.88rem;
+}
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.62rem;
+}
+.footer__title {
+  color: inherit;
+  margin-bottom: 1rem;
+}
+
+.footer__link {
+  color: $light-text-color;
+}
+
+.form__container {
+  display: flex;
+  align-items: center;
+  border-radius: 0.3125rem;
+  border: 1px solid #e6e6e6;
+  background: #f9f9f9;
+}
+
+.footer__input {
+  border: 0;
+  color: $text-color;
+  font-size: 0.875rem;
+  margin: 0 auto;
+}
+
+.footer__button {
+  color: inherit;
+  border-radius: 0rem 0.3125rem 0.3125rem 0rem;
+  border: 1px solid #e6e6e6;
+  background: $primary-color;
+  padding: 0.94rem 1.41rem;
+}
+.footer__text {
+  color: inherit;
+}

@@ -1,0 +1,53 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: grid;
+  grid-template-areas:
+    "title nav"
+    "burger burger";
+  grid-template-columns: 1fr auto;
+  background: #F6F6F6;
+}
+.header__links {
+  display: none;
+}
+#header {
+    padding-top: 2.3rem;
+    padding-bottom: 1rem;
+}
+.header__title {
+  grid-area: title;
+}
+.header__navigation {
+  grid-area: nav;
+}
+.header__navigation {
+  display: flex;
+  gap: 1.75rem;
+}
+.header__button {
+  border: 0;
+  background: none;
+}
+.burger {
+  grid-area: burger;
+  text-align: center;
+  margin: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.88rem;
+  display: none;
+}
+.burger__link {
+  font-family: "Montserrat", sans-serif;
+  color: $second-text-color;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.8125rem; /* 150% */
+  letter-spacing: 0.0125rem;
+}
+
+
+

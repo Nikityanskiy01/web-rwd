@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная работа №8</title>
+    <script src="../js/anime.min.js" defer></script>
+</head>
+<body>
+    <script>function AnimateElement(element, options) {
+        this.animate = function() {
+          const randomTransform = Object.keys(options.transform)[
+            Math.floor(Math.random() * Object.keys(options.transform).length)
+          ];
+          anime({
+            targets: element,
+            [randomTransform]: options.transform[randomTransform],
+            duration: options.duration,
+            easing: options.easing,
+            complete: function() {
+              console.log('Анимация завершена на элементе:', element);
+            }
+          });
+        };
+      }
+      
+      function createNewElement() {
+        const newElement = document.createElement('div');
+        newElement.classList.add('my-element');
+        document.body.appendChild(newElement);
+        const myAnimation = new AnimateElement(newElement, {
+          duration: 1000,
+          easing: 'easeInOutSine',
+          transform: {
+            translateX: '100px',
+            rotate: '180deg',
+            scale: 1.5
+          }
+        });
+        myAnimation.animate();
+      }
+      </script>
+      <style>body {
+        background: #fdba87;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .my-element {
+        width: 50px;
+        height: 50px;
+        background: #aa45bc;
+        margin: 30px;
+    }
+    button {
+        margin-bottom: 30px;
+        background-color: #da4f6e;
+        background-image: linear-gradient(60deg, #e85475 10%, #d48444 50%, #efcb0a 100%);
+        color: #f7f4f4;
+        border-radius: 50px;
+        padding: 12px 48px;
+        border: solid rgba(45, 45, 45, 0.90);
+        box-shadow: 0px 0px 9px 2px rgba(195, 195, 195, 0.35);
+        transition: all 0.5s ease;
+        font-size: 12px;
+        font-weight: bold;
+        cursor: pointer;
+    }</style>
+    <h1>Лабораторная работа №8</h1>
+    <button onclick="createNewElement()">Добавить элемент и запустить анимацию</button>
+    <div class="my-element"></div>
+</body>
+</html>

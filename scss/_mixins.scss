@@ -1,0 +1,13 @@
+@mixin mainButton {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.75rem; /* 200% */
+    letter-spacing: 0.0125rem;
+    display: flex;
+    padding: 0.625rem 2.25rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.625rem;
+}

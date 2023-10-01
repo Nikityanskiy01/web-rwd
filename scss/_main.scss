@@ -1,0 +1,219 @@
+.hero {
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  background: #fafafa;
+}
+#last {
+  color: $second-text-color;
+  text-align: center;
+}
+.hero__button-orange {
+  @include mainButton;
+  border-radius: 2.3125rem;
+  background: $primary-color;
+  color: $light-text-color;
+  margin: 0 auto;
+  margin-top: 2.56rem;
+  margin-bottom: 1.56rem;
+}
+.hero__button-transparent {
+  @include mainButton;
+  border-radius: 2.3125rem;
+  border: 1px solid $secondary-color-1;
+  color: $secondary-color-1;
+  margin: 0 auto;
+}
+
+.cards__title {
+  margin-bottom: 0.62rem;
+}
+.cards__paragraph {
+  text-align: center;
+  margin-bottom: 2.81rem;
+}
+.card {
+  padding: 2.1875rem 2.5rem;
+  display: grid;
+  gap: 0.9375rem;
+  grid-template-areas:
+    "image title"
+    "paragraph paragraph";
+  grid-template-columns: auto 1fr;
+  border: 1px solid #e8e8e8;
+  margin-bottom: 1.87rem;
+  &:last-child {
+    margin-bottom: 10rem;
+  }
+}
+
+.card__image {
+  grid-area: image;
+}
+.card__title {
+  grid-area: title;
+  align-self: center;
+}
+.card__paragraph {
+  grid-area: paragraph;
+}
+.about {
+  background: linear-gradient(180deg, #fafafa 60%, rgba(0, 0, 0, 0.85) 60%)
+}
+
+.about__content {
+  background: #f3f3f3;
+}
+.about__title {
+  padding-top: 6.13rem;
+}
+.about__paragraph {
+  text-align: center;
+  padding-bottom: 16.53rem;
+  margin-top: 0.62rem;
+}
+.video {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: -10rem;
+}
+.video {
+  position: relative;
+}
+
+.video__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.reviews__title {
+  color: $text-color;
+  text-align: center;
+  margin-top: 4.69rem;
+}
+
+.reviews__paragraph {
+  text-align: center;
+  margin-bottom: 3.75rem;
+  margin-top: 0.62rem;
+}
+
+.review {
+  display: grid;
+  grid-template-areas:
+    "rating rating"
+    "text text"
+    "avatar link"
+    "avatar speciality";
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns: auto 2fr;
+  grid-gap: 1.25rem;
+  align-items: center;
+  justify-items: baseline;
+  border-radius: 0.3125rem;
+  border: 1px solid #dedede;
+  background: $light-background-color;
+  margin-bottom: 1.88rem;
+  padding: 1.875rem 2.1875rem;
+  &:last-child {
+    margin-bottom: 7.75rem;
+  }
+}
+
+.review__rating {
+  grid-area: rating;
+  text-align: center;
+}
+
+.review__title {
+  grid-area: text;
+  color: $second-text-color;
+}
+
+.review__avatar {
+  grid-area: avatar;
+}
+
+.review__link {
+  grid-area: link;
+  color: $primary-color;
+  letter-spacing: 0.0125rem;
+}
+
+.review__speciality {
+  grid-area: speciality;
+  color: $text-color;
+  margin-top: -1.2rem;
+}
+
+.contact {
+  background: url("../image/form-bg.png"), lightgray;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 7.19rem 0 5.31rem 0;
+}
+.contact__title {
+  text-align: center;
+}
+.contact__title-big {
+  margin-bottom: 2.5rem;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  justify-content: center;
+}
+.form__name,
+.form__email {
+  display: flex;
+  padding: 0.6875rem 10.75rem 0.9375rem 1.3125rem;
+  align-items: center;
+  flex-shrink: 0;
+}
+.form__select {
+  display: flex;
+  padding: 0.6875rem 1.25rem 0.9375rem 1.125rem;
+  justify-content: center;
+  align-items: center;
+  gap: 8.4375rem;
+  flex-shrink: 0;
+}
+.form__textarea {
+  display: flex;
+  padding: 1rem 12.1875rem 6.25rem 1.625rem;
+  align-items: center;
+}
+.form__button {
+  @include mainButton;
+  border-radius: 0.3125rem;
+  background: $primary-color;
+  color: $light-text-color;
+  padding: 0.9375rem 2.5rem;
+}
+
+.conclusion {
+  padding: 2.5rem 0;
+}
+
+.conclusion__paragraph {
+  text-align: center;
+  margin-bottom: 3.12rem;
+}
+.conclusion__title {
+  text-align: center;
+}
+.conclusion__button {
+  @include mainButton;
+  border-radius: 0.3125rem;
+  background: $primary-color;
+  color: $light-text-color;
+  margin-top: 3.13rem;
+  padding: 0.94rem 6.34rem;
+  margin: 0 auto;
+}
