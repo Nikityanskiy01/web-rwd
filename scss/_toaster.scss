@@ -32,6 +32,10 @@
     border-radius: 10px;
   }
   
+  .toast__error {
+	background: red;
+  }
+
   @keyframes slide-right {
     from {
       right: -500px;

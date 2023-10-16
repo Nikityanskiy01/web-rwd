@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/style.css">
+	<title>fetch</title>
+</head>
+
+<body>
+	<header class="container" id="header">
+		<h3 class="header__title">Consultal</h3>
+		<ul class="header__links">
+			<li class="header__item"><a href="../index.html" class="header__link">main</a></li>
+			<li class="header__item"><a href="./html/animation.html" class="header__link">Lab 8</a></li>
+		</ul>
+		<nav class="header__navigation">
+			<button class="header__button">
+				<img src="../svg/search.svg" alt="search" aria-label="start search">
+			</button>
+			<button class="header__button">
+				<img src="../svg/shop.svg" alt="shop" aria-label="open shop">
+			</button>
+			<button class="header__button" id="burgerButton">
+				<img src="../svg/menu.svg" alt="burger menu" aria-label="open menu">
+			</button>
+		</nav>
+		<ul class="burger">
+			<li class="burger__list">
+				<a href="#" class="burger__link" aria-label="open home page">Home</a>
+			</li>
+			<li class="burger__list">
+				<a href="#" class="burger__link" aria-label="open product page">Product</a>
+			</li>
+			<li class="burger__list">
+				<a href="#" class="burger__link" aria-label="open pricing page">Pricing</a>
+			</li>
+			<li class="burger__list">
+				<a href="#" class="burger__link" aria-label="open contact page">Contact</a>
+			</li>
+			<li class="burger__list">
+				<a href="./animation.html" class="burger__link" aria-label="open animation page">AnimeJs</a>
+			</li>
+			<li class="burger__list">
+				<a href="../index.html" class="burger__link" aria-label="open contact page">Main</a>
+			</li>
+		</ul>
+	</header>
+	<main class="container">
+		<section class="gallery">
+			<button class="gallery__button form__button" aria-label="Обновить">Обновить</button>
+			<div class="gallery__wrapper">
+			</div>
+			<div class="gallery__message">
+				<p class="message__error"></p>
+			</div>
+			<div class="gallery__loader">
+				<div class="spinner"></div>
+			</div>
+		</section>
+		<section class="temperature">
+			<div class="temperature__wrapper">
+				<form action="" method="post" class="temperature__form">
+					<label class="temperature__label" for="auditorium">
+						Аудитория
+						<input name="auditorium" value="Пр-1315" type="text" class="temperature__form-text"
+							id="temperature-auditorium" required>
+					</label>
+					<label class="temperature__label" cfor="temperature">
+						Температура
+						<input name="temperature" type="number" value="20.2" class="temperature__form-text"
+							id="temperature-temp" required>
+					</label>
+					<button class="temperature__button">Отправить</button>
+				</form>
+			</div>
+		</section>
+	</main>
+	<div class="toast">
+		<div class="toast__wrapper">
+			<p class="name"></p>
+			<p class="message"></p>
+			<button class="toast__button">
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x"
+					viewBox="0 0 16 16">
+					<path
+						d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+				</svg>
+			</button>
+		</div>
+	</div>
+	<script type="module" src="../js/fetch.js"></script>
+</body>
+
+</html>

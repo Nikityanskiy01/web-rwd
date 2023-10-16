@@ -1,0 +1,11 @@
+.temperature {
+	margin-top: 50px;
+
+
+	&__label {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		display: flex;
+		gap: 30px;
+	}
+}
